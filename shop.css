@@ -1,0 +1,127 @@
+.shop-box{
+  display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+        border-radius:10px;
+     margin:20px;
+        width:auto;
+        height:auto;
+        flex-wrap:wrap;
+}
+.clothing-title{
+  color:grey;
+  width:100vw;
+  text-align:center;
+  font-size:50px;
+margin:50px;
+}
+
+.item{
+  display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+    flex-direction:column;
+    margin:20px;
+}
+.character-box-top{
+   width:300px;
+  height:70px;
+  display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+    border-top-left-radius:10px;
+        border-top-right-radius:10px;
+            background:linear-gradient(to bottom right,#38c3ff 70%,blue);
+     font-weight:bold;
+    font-size:30px;
+    color:white;
+}
+.character-box{
+   width:300px;
+  height:300px;
+  display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+    margin-top:0px;
+    border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+      background-image:url('images/thumbnail-dark.jpeg');
+    background-size:cover;
+}
+.character-img{
+  width:300px;
+}
+.character-box-bottom{
+   width:300px;
+  height:70px;
+  display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+    margin:10px 0px;
+    border-radius:10px;
+              background-image:url('images/thumbnail-dark.jpeg');
+    background-size:cover;
+}
+.item-price{
+   width:130px;
+    font-weight:bold;
+    font-size:30px;
+    color:white;
+    transition:0.3s;
+}
+.item-price:hover{
+   font-size:35px;
+transition:0.3s;
+color:yellow;
+cursor: pointer;
+}
+.item-link{
+  height:70px;
+  width:100px;
+  background:linear-gradient(to bottom right,#38c3ff 70%,blue);
+   font-weight:bold;
+    font-size:30px;
+    color:white;
+    display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+transition:0.3s;
+    
+}
+.item-link:hover{
+    font-size:40px;
+transition:0.3s;
+color:yellow;
+cursor: pointer;
+}
+.item-type{
+  height:70px;
+  width:70px;
+  background:grey;
+   font-weight:bold;
+    font-size:30px;
+    color:white;
+    display:flex;
+  justify-content:center;
+    align-items: center;
+    text-align:center;
+transition:0.3s;
+    
+}
+.item-type:hover{
+   font-size:40px;
+transition:0.3s;
+color:yellow;
+cursor: pointer;
+}
+
+
+

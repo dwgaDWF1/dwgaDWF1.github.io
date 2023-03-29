@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+     
+ 
+        <title>Contact | Beluga Games</title>
+        <meta charset="UTF-8">
+                         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="Welcome to our contact page! Reach out through this form if you have any questions or concerns."/>
+
+
+
+        <link href="contact.css" rel="stylesheet" type="text/css">
+        
+   <link href="global.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="global.js"></script>
+     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+       
+      <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+        
+    <link rel="shortcut icon" href="images/aslogo-1.png">
+
+    
+    </head>
+
+      <body>
+     
+              
+         <div class="header-box">
+  
+<div class="header-favicon"><img src="images/aslogo-1.png"></img></div>
+  
+
+  
+   <div class="header-button-group">
+       
+   
+    
+    
+    <a href="index.html"class="header-button"><p class="hover-underline-animation">Home</p></a>
+  
+ <a href="partners.html"class="header-button"><p class="hover-underline-animation">Partners</p></a>
+  
+  <a href="developer-blogs.html"class="header-button"><p class="hover-underline-animation">Blog</p></a>
+  
+  <a href="jobs.html"class="header-button"><p class="hover-underline-animation">Jobs</p></a>
+
+  <a href="contact.html"class="header-button"><p class="hover-underline-animation">Contact</p></a>
+  
+  <button class="mobile-menu-button"onclick="openmobilemenu();"id="mobilemenub"><i class="fa-solid fa-bars"></i></button>
+   <button class="mobile-menu-close-button"onclick="closemobilemenu();"id="mobilemenucloseb"><i class="fa-solid fa-xmark"></i></button>
+  
+  </div>
+  
+</div>
+        
+      <div class="mobilemenu"id="mobilemenu">
+        <a href="index.html"><button class="mobilemenub">Home</button></a>
+        <a href="partners.html"><button class="mobilemenub">Partners</button></a>
+         <a href="developer-blogs.html"><button class="mobilemenub">Blog</button></a>
+         <a href="jobs.html"><button class="mobilemenub">Jobs</button></a>
+          <a href="contact.html"><button class="mobilemenub">Contact</button></a>
+      </div>
+        
+      
+      
+    
+
+          
+           <div class="headerfixedbackground"style="background-image: url('images/header.jpg');">
+             
+             </div>
+             
+             
+            <div class="header">
+              
+           
+           <div class="pagetitle">Contact</div>
+               
+            </div>
+        
+         
+         <span class="container">
+           
+           
+           
+           
+           
+            
+          <div class="form-box">
+            
+            
+            <div class="submitted-content"id="submitted-content">
+  <div class="submitted-p">Your Form Has Been Successfully received! You should hear back from us within the next 3 days.</div>
+            </div>
+            
+            
+            <div class="form-content"id="form-content">
+    
+     
+         
+               
+
+
+
+             <input type="text" class="name" name="name" placeholder="Name"id="name"><br>
+
+             
+
+             <input type="text" class="email" name="email" placeholder="Email"id="email"><br>
+             
+            
+
+        
+         
+          <textarea id="message" name="message"class="message" placeholder="Write something interesting..."></textarea>
+
+            
+            
+            <div class="submit-b-container">
+             
+             
+             <button id="submit-b"onclick="sendMessage();">Submit</button>
+
+        
+
+
+             </div>
+       
+        
+           
+
+  <script>
+     function sendMessage() {
+      
+      var name= document.getElementById("name").value;
+
+      var message= document.getElementById("message").value;
+      var email = document.getElementById("email").value;
+      
+      const request = new XMLHttpRequest();
+      request.open("POST","https://discord.com/api/webhooks/1018998214608814260/KeQA8sEAR-DGn60F3vRbTr--4zR_9ANGj6VaWsYwSkpJCTJALRP6OyHiMZIXfrqkExzD" );
+      request.setRequestHeader('Content-type', 'application/json');
+      const params = {
+  "username": "Contact Page Webhook",
+  "content": "",
+  "embeds": [
+      {
+      
+      "title": "Webhook",
+      "description": "`This is a message from the sites contact form`",
+      "color": 15258703,
+      "fields": [
+      {
+         "name": "Name",
+         "value": `${name}`,
+         "inline": true
+       },
+       {
+         "name": "Message",
+         "value": `${message}`,
+         "inline": true
+       },
+       {
+         "name": "email",
+         "value": `${email}`,
+         "inline": true
+       }
+      ]
+      
+      }
+      ]
+      };
+      
+      
+
+      
+      request.send(JSON.stringify(params));
+      
+      document.getElementById("form-content").style.display = "none";
+      document.getElementById("submitted-content").style.display = "flex";
+      
+      
+      
+      }
+      
+          
+       
+      
+  </script>
+
+            
+            
+          </div>
+            </div>
+            
+            
+            
+            </span>
+      
+   
+            
+
+
+
+            <div class="containerbottom">
+              <div class="footer-left-side">
+              <div class="footer-links">
+              <a href="terms.html">Terms of Service</a>|
+              <a href="support.html">Support</a>|
+              <a href="status.html">Status</a>|
+              <a href="contact.html">Contact</a>
+              </div>
+              <div class="footer-socials">
+                <a href="https://discord.gg/C245bVbt2A"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitter.com/BelugaGamesRBLX"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCwUFvky1kSPbiDqiRHrZblA"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Awes0meStudios"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <div class="footer-copyright"><p>Copyright ©️ 2022 Beluga Games. All Rights Reserved.</p></div>
+              </div> 
+              <div class="footer-logo"><img src="images/belugagames.png"></img></div>
+              </div>
+              
+        
+    </body>
+</html>

@@ -1,0 +1,122 @@
+.topsectioncontent{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  width:calc(300px * 2.5);
+  max-width:100vw;
+}
+
+.top-section-box{
+  width:340px;
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+.top-section-box-p{
+  height:160px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    text-align:center;
+      flex-direction:column;
+      color:grey;
+}
+.top-section-box-title{
+  font-weight:bold;
+  font-size:30px;
+  margin:10px;
+}
+.top-section-box-descript{;
+  font-size:17px;
+    margin:10px;
+}
+.top-section-box-b{
+  background:#38c3ff;
+  padding:15px;
+  border-radius:9px;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+   box-shadow:grey 0px 8px 24px;
+}
+.top-section-box-b:hover{
+   transform: translate(0, -5px) scale(1.05) rotate(2deg);
+   transition:0.3s;
+   background:#185acc;
+   color:grey;
+      
+}
+.faqcontent{
+  width:100vw;
+  display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+.FAQlist{
+  animation:fadein 1s 1;
+    text-decoration:none;
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   width:50vw;
+      text-align:center;
+          list-style: none;
+          flex-direction:column;
+          color:grey;
+              
+}
+.blue{
+  color:grey;
+  font-weight:bold;
+  font-size:20px;
+  margin:10px;
+    font-style:italic;
+}
+li{
+  padding:20px 0px;
+}
+#social-icon-github:hover,#social-icon-twitter:hover,#social-icon-discord:hover,#social-icon-email:hover{
+  color:#38c3ff;
+  transition:0.3s;
+}
+#social-icon-github,#social-icon-twitter,#social-icon-discord,#social-icon-email{
+  transition:0.3s;
+  font-size:40px;
+  color:grey;
+  margin:20px;
+    transition:0.3s;
+}
+
+#social-icon-github{
+     animation:fadeInUp;
+ animation-duration:0.5s;
+
+}
+#social-icon-twitter{
+     animation:fadeInUp;
+ animation-duration:1s;
+}
+#social-icon-discord{
+     animation:fadeInUp;
+ animation-duration:1.5s;
+}
+#social-icon-email{
+     animation:fadeInUp;
+ animation-duration:2s;
+}
+.bottom-text{
+   font-size:20px;
+  font-weight:bold;
+      color:grey;
+}
+.bottom-text > a{
+  color: #38c3ff;
+}
