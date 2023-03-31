@@ -327,9 +327,7 @@ font-size:25px;
 .closeannounment{
   display:none;
 }
-  aboutsectionOC{
-    display:none;
-  }
+
 
 .game-play-b > p{
   display:none;
@@ -340,24 +338,7 @@ font-size:25px;
 .pagetitlehome{
   font-size:40px;
   text-shadow:none;
+}:60vw;
 }
-.games-content{
-  flex-direction:column;
-}
-.statistics-content{
-  flex-direction:column;
-}
-.statisticsnumbercontainer{
-  width:60vw;
-}
-.statisticsnumber{
-  font-size:calc(70px + 2vw);
-}
-
-
-.statisticslabel{
-  font-size:calc(20px + 0.2vw);
-}
-
 
 }
